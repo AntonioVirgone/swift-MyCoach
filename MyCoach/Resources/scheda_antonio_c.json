@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Circuito 1:",
+        "type": "C",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Air Bike 10 minuti (1’ 150 watt 30’’ 250 watt)",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "value00010",
+                "value": "Leg Press 45° ",
+                "series":4,
+                "repetition": 15,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00011",
+                "value": "Squat + Overhead Press ",
+                "series":4,
+                "repetition": 15,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00012",
+                "value": "Chest Incline + Alzate laterali ",
+                "series":3,
+                "repetition": 10,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00013",
+                "value": "High pull + high pull inverso ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00014",
+                "value": "Curl Manubri + Tricipiti sopra la testa ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2",
+        "type": "C",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)",
+                "addRepetition": false,
+                "addWeigth": false
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3: 4 series (rest.2’)",
+        "type": "C",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Bike 3 minuti",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Rope 40",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Side Plank 25+25",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Crunch gambe alzate 25",
+                "addRepetition": false,
+                "addWeigth": false
+            }
+        ]
+    }
+]
+

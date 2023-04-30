@@ -8,8 +8,8 @@
 import Foundation
 
 struct TrainingCardModel: Hashable, Codable {
-    let id: UUID
+    let id: UUID?
     let title: String
-    let type: String
-    let excercises: [TrainingModel]
+    var type: String
+    let trainings: [TrainingModel]
 }

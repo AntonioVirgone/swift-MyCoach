@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Circuito 1:",
+        "type": "B",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Vogatore 10 minuti (<2.5)",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "value00005",
+                "value": "Piegamenti sulle braccia ",
+                "series":3,
+                "repetition": 15,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": false
+            },
+            {
+                "code": "value00006",
+                "value": "Chest Press ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00007",
+                "value": "Pulley ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00008",
+                "value": "Lat Machine ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00009",
+                "value": "Shoulder Press ",
+                "series":3,
+                "repetition": 12,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2",
+        "type": "B",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)",
+                "addRepetition": false,
+                "addWeigth": false
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3: 4 series (rest.2’)",
+        "type": "B",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Affondi in cammino 8",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Balzi su cubo 8",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Jumping jack 40",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Torsioni del busto 50",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Crunch gambe alzate 25",
+                "addRepetition": false,
+                "addWeigth": false
+            }
+        ]
+    }
+]
+

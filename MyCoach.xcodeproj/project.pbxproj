@@ -8,25 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27C929FE8DF900CFBA0A /* MyCoachApp.swift */; };
-		F91B27CC29FE8DF900CFBA0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27CB29FE8DF900CFBA0A /* ContentView.swift */; };
+		F91B27CC29FE8DF900CFBA0A /* UploadDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27CB29FE8DF900CFBA0A /* UploadDataView.swift */; };
 		F91B27CE29FE8DFB00CFBA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91B27CD29FE8DFB00CFBA0A /* Assets.xcassets */; };
 		F91B27D129FE8DFB00CFBA0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91B27D029FE8DFB00CFBA0A /* Preview Assets.xcassets */; };
 		F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27D829FE8E4E00CFBA0A /* TrainingModel.swift */; };
 		F91B27DB29FEAFE800CFBA0A /* TrainingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27DA29FEAFE800CFBA0A /* TrainingCardModel.swift */; };
 		F91B27DD29FEB02E00CFBA0A /* RepetitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27DC29FEB02E00CFBA0A /* RepetitionModel.swift */; };
 		F91B27DF29FEB04500CFBA0A /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27DE29FEB04500CFBA0A /* FoodModel.swift */; };
+		F91B27E329FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F91B27E129FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld */; };
+		F91B27E829FEB30400CFBA0A /* TrainingDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27E729FEB30400CFBA0A /* TrainingDataController.swift */; };
+		F91B27EE29FEC63800CFBA0A /* scheda_antonio_a.json in Resources */ = {isa = PBXBuildFile; fileRef = F91B27ED29FEC63800CFBA0A /* scheda_antonio_a.json */; };
+		F91B27F029FEC65500CFBA0A /* scheda_antonio_b.json in Resources */ = {isa = PBXBuildFile; fileRef = F91B27EF29FEC65500CFBA0A /* scheda_antonio_b.json */; };
+		F91B27F229FEC66D00CFBA0A /* scheda_antonio_c.json in Resources */ = {isa = PBXBuildFile; fileRef = F91B27F129FEC66D00CFBA0A /* scheda_antonio_c.json */; };
+		F91B27F429FECAA000CFBA0A /* JsonDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27F329FECAA000CFBA0A /* JsonDecode.swift */; };
+		F91B27F629FECAC000CFBA0A /* NetworkPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27F529FECAC000CFBA0A /* NetworkPackage.swift */; };
+		F91B27FA29FED3A300CFBA0A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27F929FED3A300CFBA0A /* HomeView.swift */; };
+		F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */; };
+		F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27FF29FED4F200CFBA0A /* TrainingView.swift */; };
+		F91B280229FED58400CFBA0A /* TrainingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280129FED58400CFBA0A /* TrainingRowView.swift */; };
+		F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280329FED87100CFBA0A /* FeatureCardView.swift */; };
+		F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */; };
+		F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280829FEDA7600CFBA0A /* RepetitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F91B27C629FE8DF900CFBA0A /* MyCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91B27C929FE8DF900CFBA0A /* MyCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoachApp.swift; sourceTree = "<group>"; };
-		F91B27CB29FE8DF900CFBA0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F91B27CB29FE8DF900CFBA0A /* UploadDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDataView.swift; sourceTree = "<group>"; };
 		F91B27CD29FE8DFB00CFBA0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91B27D029FE8DFB00CFBA0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F91B27D829FE8E4E00CFBA0A /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		F91B27DA29FEAFE800CFBA0A /* TrainingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardModel.swift; sourceTree = "<group>"; };
 		F91B27DC29FEB02E00CFBA0A /* RepetitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionModel.swift; sourceTree = "<group>"; };
 		F91B27DE29FEB04500CFBA0A /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		F91B27E229FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoachDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F91B27E729FEB30400CFBA0A /* TrainingDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDataController.swift; sourceTree = "<group>"; };
+		F91B27ED29FEC63800CFBA0A /* scheda_antonio_a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_antonio_a.json; sourceTree = "<group>"; };
+		F91B27EF29FEC65500CFBA0A /* scheda_antonio_b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_antonio_b.json; sourceTree = "<group>"; };
+		F91B27F129FEC66D00CFBA0A /* scheda_antonio_c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_antonio_c.json; sourceTree = "<group>"; };
+		F91B27F329FECAA000CFBA0A /* JsonDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecode.swift; sourceTree = "<group>"; };
+		F91B27F529FECAC000CFBA0A /* NetworkPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPackage.swift; sourceTree = "<group>"; };
+		F91B27F929FED3A300CFBA0A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardView.swift; sourceTree = "<group>"; };
+		F91B27FF29FED4F200CFBA0A /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		F91B280129FED58400CFBA0A /* TrainingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRowView.swift; sourceTree = "<group>"; };
+		F91B280329FED87100CFBA0A /* FeatureCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCardView.swift; sourceTree = "<group>"; };
+		F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionDataController.swift; sourceTree = "<group>"; };
+		F91B280829FEDA7600CFBA0A /* RepetitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +87,11 @@
 		F91B27C829FE8DF900CFBA0A /* MyCoach */ = {
 			isa = PBXGroup;
 			children = (
-				F91B27D729FE8E1B00CFBA0A /* Model */,
 				F91B27C929FE8DF900CFBA0A /* MyCoachApp.swift */,
-				F91B27CB29FE8DF900CFBA0A /* ContentView.swift */,
+				F91B27E929FEC5F100CFBA0A /* Resources */,
+				F91B27E029FEB0C000CFBA0A /* DataModel */,
+				F91B27D729FE8E1B00CFBA0A /* Model */,
+				F91B27F829FECF2A00CFBA0A /* View */,
 				F91B27CD29FE8DFB00CFBA0A /* Assets.xcassets */,
 				F91B27CF29FE8DFB00CFBA0A /* Preview Content */,
 			);
@@ -87,6 +117,66 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F91B27E029FEB0C000CFBA0A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F91B27E129FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld */,
+				F91B27E729FEB30400CFBA0A /* TrainingDataController.swift */,
+				F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F91B27E929FEC5F100CFBA0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F91B27F329FECAA000CFBA0A /* JsonDecode.swift */,
+				F91B27F529FECAC000CFBA0A /* NetworkPackage.swift */,
+				F91B27ED29FEC63800CFBA0A /* scheda_antonio_a.json */,
+				F91B27EF29FEC65500CFBA0A /* scheda_antonio_b.json */,
+				F91B27F129FEC66D00CFBA0A /* scheda_antonio_c.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F91B27F829FECF2A00CFBA0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91B27CB29FE8DF900CFBA0A /* UploadDataView.swift */,
+				F91B27FC29FED46800CFBA0A /* Home */,
+				F91B27FB29FED45400CFBA0A /* Training */,
+				F91B280529FED99400CFBA0A /* Repetition */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91B27FB29FED45400CFBA0A /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				F91B27FF29FED4F200CFBA0A /* TrainingView.swift */,
+				F91B280129FED58400CFBA0A /* TrainingRowView.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		F91B27FC29FED46800CFBA0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F91B27F929FED3A300CFBA0A /* HomeView.swift */,
+				F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */,
+				F91B280329FED87100CFBA0A /* FeatureCardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F91B280529FED99400CFBA0A /* Repetition */ = {
+			isa = PBXGroup;
+			children = (
+				F91B280829FEDA7600CFBA0A /* RepetitionView.swift */,
+			);
+			path = Repetition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +193,8 @@
 			dependencies = (
 			);
 			name = MyCoach;
+			packageProductDependencies = (
+			);
 			productName = MyCoach;
 			productReference = F91B27C629FE8DF900CFBA0A /* MyCoach.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +223,8 @@
 				Base,
 			);
 			mainGroup = F91B27BD29FE8DF900CFBA0A;
+			packageReferences = (
+			);
 			productRefGroup = F91B27C729FE8DF900CFBA0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,7 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91B27D129FE8DFB00CFBA0A /* Preview Assets.xcassets in Resources */,
+				F91B27F029FEC65500CFBA0A /* scheda_antonio_b.json in Resources */,
+				F91B27EE29FEC63800CFBA0A /* scheda_antonio_a.json in Resources */,
 				F91B27CE29FE8DFB00CFBA0A /* Assets.xcassets in Resources */,
+				F91B27F229FEC66D00CFBA0A /* scheda_antonio_c.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,11 +254,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91B27CC29FE8DF900CFBA0A /* ContentView.swift in Sources */,
+				F91B27CC29FE8DF900CFBA0A /* UploadDataView.swift in Sources */,
+				F91B27F629FECAC000CFBA0A /* NetworkPackage.swift in Sources */,
+				F91B27E829FEB30400CFBA0A /* TrainingDataController.swift in Sources */,
+				F91B280229FED58400CFBA0A /* TrainingRowView.swift in Sources */,
 				F91B27DD29FEB02E00CFBA0A /* RepetitionModel.swift in Sources */,
+				F91B27E329FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld in Sources */,
+				F91B27FA29FED3A300CFBA0A /* HomeView.swift in Sources */,
+				F91B27F429FECAA000CFBA0A /* JsonDecode.swift in Sources */,
 				F91B27DB29FEAFE800CFBA0A /* TrainingCardModel.swift in Sources */,
+				F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */,
+				F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */,
 				F91B27DF29FEB04500CFBA0A /* FoodModel.swift in Sources */,
 				F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */,
+				F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */,
+				F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */,
+				F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */,
 				F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +471,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F91B27E129FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F91B27E229FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodel */,
+			);
+			currentVersion = F91B27E229FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodel */;
+			path = MyCoachDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F91B27BE29FE8DF900CFBA0A /* Project object */;
 }

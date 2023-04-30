@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Circuito 1:",
+        "type": "A",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Cardio tapy 5’ cammino + 10’ (alterno 1’ corsa e 1’ cammino)",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "value00001",
+                "value": "Leg Press ",
+                "series":4,
+                "repetition": 15,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            },
+            {
+                "code": "value00002",
+                "value": "Leg Extension ",
+                "series":3,
+                "repetition": 15,
+                "relax": 60,
+                "addRepetition": true,
+                "addWeigth": true
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2: 4 series (rest.2’)",
+        "type": "A",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Squat con kettleball 20",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Skeep alto 30 secondi",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Step up continuo 60 secondi a gamba",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Plank max",
+                "addRepetition": false,
+                "addWeigth": false
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3:",
+        "type": "A",
+        "trainings": [
+            {
+                "code": "valuexxxxx",
+                "value": "Climbe 10 minuti",
+                "addRepetition": false,
+                "addWeigth": false
+            },
+            {
+                "code": "value00003",
+                "value": "Crunch ",
+                "series":3,
+                "repetition": 20,
+                "relax": 30,
+                "addRepetition": true,
+                "addWeigth": false
+            },
+            {
+                "code": "value00004",
+                "value": "Crunch obliqui ",
+                "series":3,
+                "repetition": 50,
+                "relax": 30,
+                "addRepetition": true,
+                "addWeigth": false
+            }
+        ]
+    }
+]
