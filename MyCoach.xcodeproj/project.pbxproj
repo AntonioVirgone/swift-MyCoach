@@ -29,6 +29,9 @@
 		F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280329FED87100CFBA0A /* FeatureCardView.swift */; };
 		F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */; };
 		F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280829FEDA7600CFBA0A /* RepetitionView.swift */; };
+		F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */; };
+		F91B280E29FEDC6300CFBA0A /* RelaxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280D29FEDC6300CFBA0A /* RelaxButtonView.swift */; };
+		F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280F29FEDC7800CFBA0A /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		F91B280329FED87100CFBA0A /* FeatureCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCardView.swift; sourceTree = "<group>"; };
 		F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionDataController.swift; sourceTree = "<group>"; };
 		F91B280829FEDA7600CFBA0A /* RepetitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionView.swift; sourceTree = "<group>"; };
+		F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
+		F91B280D29FEDC6300CFBA0A /* RelaxButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxButtonView.swift; sourceTree = "<group>"; };
+		F91B280F29FEDC7800CFBA0A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +178,20 @@
 		F91B280529FED99400CFBA0A /* Repetition */ = {
 			isa = PBXGroup;
 			children = (
+				F91B280C29FEDC5000CFBA0A /* Timer */,
 				F91B280829FEDA7600CFBA0A /* RepetitionView.swift */,
+				F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */,
 			);
 			path = Repetition;
+			sourceTree = "<group>";
+		};
+		F91B280C29FEDC5000CFBA0A /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F91B280D29FEDC6300CFBA0A /* RelaxButtonView.swift */,
+				F91B280F29FEDC7800CFBA0A /* CounterView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,15 +279,18 @@
 				F91B27E329FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld in Sources */,
 				F91B27FA29FED3A300CFBA0A /* HomeView.swift in Sources */,
 				F91B27F429FECAA000CFBA0A /* JsonDecode.swift in Sources */,
+				F91B280E29FEDC6300CFBA0A /* RelaxButtonView.swift in Sources */,
 				F91B27DB29FEAFE800CFBA0A /* TrainingCardModel.swift in Sources */,
 				F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */,
 				F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */,
 				F91B27DF29FEB04500CFBA0A /* FoodModel.swift in Sources */,
+				F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */,
 				F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */,
 				F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */,
 				F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */,
 				F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */,
 				F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */,
+				F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

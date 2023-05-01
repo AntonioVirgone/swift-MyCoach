@@ -35,12 +35,7 @@ struct TrainingRowView_Previews: PreviewProvider {
 
 extension TrainingRowView {
     private var navigationRow: some View {
-/*        NavigationLink(destination: AddRepetitionView(colorBar: color,
-                                                      title: title,
-                                                      isActiveAddWeight: isActiveAddWeight,
-                                                      exerciseCode: exerciseCode,
-                                                      relaxCounter: relaxCounter)) {
- */
+        NavigationLink(destination: RepetitionView(color: color, training: training)) {
         Text(training.value)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .foregroundColor(.black)
@@ -51,10 +46,7 @@ extension TrainingRowView {
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(bgAppColor, lineWidth: 0.2)
                 )
-        /*
-
          }
-         */
         .listRowSeparator(.hidden)
         .listRowBackground(color)
     }
