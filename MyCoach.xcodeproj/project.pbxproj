@@ -32,6 +32,8 @@
 		F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */; };
 		F91B280E29FEDC6300CFBA0A /* RelaxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280D29FEDC6300CFBA0A /* RelaxButtonView.swift */; };
 		F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280F29FEDC7800CFBA0A /* CounterView.swift */; };
+		F91B281229FFD25F00CFBA0A /* EditRepetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */; };
+		F91B28142A002C2800CFBA0A /* RepetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
 		F91B280D29FEDC6300CFBA0A /* RelaxButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxButtonView.swift; sourceTree = "<group>"; };
 		F91B280F29FEDC7800CFBA0A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepetitionCardView.swift; sourceTree = "<group>"; };
+		F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 				F91B280C29FEDC5000CFBA0A /* Timer */,
 				F91B280829FEDA7600CFBA0A /* RepetitionView.swift */,
 				F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */,
+				F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */,
+				F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */,
 			);
 			path = Repetition;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91B281229FFD25F00CFBA0A /* EditRepetitionCardView.swift in Sources */,
 				F91B27CC29FE8DF900CFBA0A /* UploadDataView.swift in Sources */,
 				F91B27F629FECAC000CFBA0A /* NetworkPackage.swift in Sources */,
 				F91B27E829FEB30400CFBA0A /* TrainingDataController.swift in Sources */,
@@ -287,6 +294,7 @@
 				F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */,
 				F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */,
 				F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */,
+				F91B28142A002C2800CFBA0A /* RepetitionCardView.swift in Sources */,
 				F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */,
 				F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */,
 				F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */,

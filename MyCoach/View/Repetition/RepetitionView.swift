@@ -9,12 +9,14 @@ import SwiftUI
 
 struct RepetitionView: View {
     @State private var repetitions = RepetitionDataController.find()
-    @State private var number:Double = 0
+    @Environment(\.dismiss) private var dismiss
+    
+    @State private var number: Double = 0
     @State private var weigth: Double = 0
-
+    
     let color: Color
     let training: TrainingModel
-
+    
     var body: some View {
         ZStack {
             bgAppColor.edgesIgnoringSafeArea(.all)
@@ -22,7 +24,7 @@ struct RepetitionView: View {
                 Rectangle()
                     .frame(height: 0)
                     .background(color.opacity(0.4))
-                //InsertRepetitionDataView(isEditMode:false, title: title, isActiveAddWeight: isActiveAddWeight, exerciseCode: exerciseCode)
+                insertRepetition
                 Spacer()
                     .frame(height: 40)
                 RelaxButtonView(counter: Int(training.relax!))
@@ -81,6 +83,15 @@ struct RepetitionView: View {
         }
         return middle
     }
+    
+    private func deleteRepetition(offsets: IndexSet) {
+        _ = withAnimation {
+            offsets.map {
+                RepetitionDataController.deleteRepetition(repetitionId: repetitions[$0].id)
+                repetitions = RepetitionDataController.find()
+            }
+        }
+    }
 }
 
 struct RepetitionView_Previews: PreviewProvider {
@@ -123,30 +134,75 @@ extension RepetitionView {
                     .font(.system(size: 18, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
-                /*
                 List {
                     ForEach(repetitions, id: \.self) { repetition in
-                        if exerciseCode == repetition.trainingCode {
-                            NavigationLink(destination: EditRepetitionView(repetition: repetition, colorBar: colorBar)) {
-                                PostCardView(profileName: "\(Int(repetition.number)) ripetioni",
-                                             datetime: "\(repetition.date!.formatted())",
-                                             description: "\(Int(repetition.weigth)) kg")
-                                
-                            }
-                            .listRowSeparator(.hidden)
-                            .listRowBackground(bgAppColor)
+                        if training.code == repetition.trainingCode {
+                            RepetitionCardView(repetition: repetition, training: training, color: color)
+                                .listRowSeparator(.hidden)
+                                .listRowBackground(bgAppColor)
                         }
                     }
                     .onDelete(perform: deleteRepetition)
                 }
                 .ignoresSafeArea()
-                .scrollContentBackground(.hidden) // HERE
+                .scrollContentBackground(.hidden)
                 .background(bgAppColor)
-                 */
             }
             else {
                 Spacer()
             }
         }
+    }
+    
+    private var insertRepetition: some View {
+        VStack {
+            VStack {
+                Text("Ripetizioni: \(Int(number))")
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                Slider(value: $number, in: 0...60, step: 1)
+            }
+            VStack {
+                Text("Peso: \(Int(weigth))")
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                Slider(value: $weigth, in: 0...150, step: 1)
+            }
+            Spacer()
+                .frame(height: 30)
+            HStack {
+                Spacer()
+                Button {
+                    RepetitionDataController.addRepetition(number: number, weigth: weigth, trainingCode: training.code ?? "")
+                    repetitions = RepetitionDataController.find()
+                } label: {
+                    Text("Save")
+                        .font(.system(size: 26, weight: .bold, design: .rounded))
+                        .foregroundColor(color5)
+                        .frame(width: 130, height: 50)
+                        .background(color1)
+                        .cornerRadius(10)
+                        .padding(EdgeInsets(top: 0, leading: 2, bottom: 0, trailing: 2))
+                }
+                Spacer()
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Close")
+                        .font(.system(size: 26, weight: .bold, design: .rounded))
+                        .foregroundColor(color1)
+                        .frame(width: 130, height: 50)
+                        .background(color5)
+                        .cornerRadius(10)
+                        .padding(EdgeInsets(top: 0, leading: 2, bottom: 0, trailing: 2))
+                    
+                }
+                Spacer()
+            }
+            .listRowSeparator(.hidden)
+        }
+        .navigationTitle(training.value)
+        .font(.title2)
+        .foregroundColor(.white)
+        .padding()
+        .background(bgAppColor)
     }
 }

@@ -14,7 +14,7 @@ class RepetitionDataController: ObservableObject {
     }
     
     static var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "TrainerDataModel")
+        let container = NSPersistentContainer(name: "MyCoachDataModel")
         container.loadPersistentStores { (description, error) in
             if let error = error {
                 print(error)
@@ -54,13 +54,13 @@ class RepetitionDataController: ObservableObject {
         let fetchRequest: NSFetchRequest<RepetitionEntity>
         fetchRequest = RepetitionEntity.fetchRequest()
         
+        //MARK: non funziona la select
         fetchRequest.predicate = NSPredicate(
-            format: "id = '\(repetitionId)'"
+            format: "id = '\(repetitionId))'"
         )
         
         do {
             let repetition = try context.fetch(fetchRequest).first
-            repetition?.id = repetitionId
             repetition!.number = number
             repetition!.weigth = weigth
             
@@ -92,7 +92,7 @@ class RepetitionDataController: ObservableObject {
             try context.save()
             print("Data saved")
         } catch {
-            print("Error in save data")
+            print("Error save repetition, \(error)")
         }
     }
 }
