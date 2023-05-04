@@ -15,7 +15,7 @@ struct CounterView: View {
     
     var body: some View {
         ZStack {
-            bgAppColor.edgesIgnoringSafeArea(.all)
+            bgAppColorDark.edgesIgnoringSafeArea(.all)
             VStack {
                 Text("\(counter) sec")
                     .font(.system(size: 14, weight: .medium, design: .rounded))

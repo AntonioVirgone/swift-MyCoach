@@ -16,7 +16,7 @@ struct TrainingView: View {
     
     var body: some View {
         ZStack {
-            bgAppColor.edgesIgnoringSafeArea(.all)
+            bgAppColorDark.edgesIgnoringSafeArea(.all)
             VStack {
                 Rectangle()
                     .frame(height: 0)
@@ -35,7 +35,7 @@ struct TrainingView: View {
                     }
                 }
                 .scrollContentBackground(.hidden)
-                .background(bgAppColor)
+                .background(bgAppColorDark)
             }
             .navigationTitle(title)
             .font(.title2)

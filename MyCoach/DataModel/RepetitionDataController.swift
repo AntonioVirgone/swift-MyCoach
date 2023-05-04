@@ -35,13 +35,14 @@ class RepetitionDataController: ObservableObject {
     }
     
     static func find() -> [RepetitionModel] {
-        let fetchRequest: NSFetchRequest<RepetitionEntity>
-        fetchRequest = RepetitionEntity.fetchRequest()
-        
+        let fetchRequest = RepetitionEntity.fetchRequest()
+
         do {
             var array = [RepetitionModel]()
+            
             let repetitionList = try context.fetch(fetchRequest)
             for repetition in repetitionList {
+                print("\(repetition)")
                 array.append(RepetitionModel(id: repetition.id ?? UUID(), date: repetition.date ?? Date(), number: repetition.number, weigth: repetition.weigth, trainingCode: repetition.trainingCode ?? ""))
             }
             return array
@@ -51,20 +52,20 @@ class RepetitionDataController: ObservableObject {
     }
     
     static func editRepetition(number: Double, weigth: Double, repetitionId: UUID) {
-        let fetchRequest: NSFetchRequest<RepetitionEntity>
-        fetchRequest = RepetitionEntity.fetchRequest()
-        
-        //MARK: non funziona la select
+        let fetchRequest = RepetitionEntity.fetchRequest()
+
         fetchRequest.predicate = NSPredicate(
-            format: "id = '\(repetitionId))'"
+            format: "id = '\(repetitionId)'"
         )
         
         do {
-            let repetition = try context.fetch(fetchRequest).first
-            repetition!.number = number
-            repetition!.weigth = weigth
-            
-            save()
+            let repetitions = try context.fetch(fetchRequest)
+            if !repetitions.isEmpty {
+                let repetition = repetitions.first
+                repetition!.number = number
+                repetition!.weigth = weigth
+                save()
+            }
         } catch {
             print(error)
         }

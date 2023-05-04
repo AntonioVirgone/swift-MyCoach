@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     @State var balance = "10h"
-        
+    
     var body: some View {
         NavigationView {
             ZStack {
-                bgAppColor.edgesIgnoringSafeArea(.all)
+                bgAppColorDark.edgesIgnoringSafeArea(.all)
                 VStack {
                     header
                     Spacer().frame(height: 20)
@@ -24,7 +24,7 @@ struct HomeView: View {
                 }
             }
         }
-        .accentColor(bgAppColor)
+        .accentColor(bgAppColorDark)
     }
 }
 
@@ -42,30 +42,30 @@ extension HomeView {
                 .fontWeight(.medium)
                 .foregroundColor(.white)
             //NavigationLink(destination: ProfileView().toolbarRole(.editor)) {
-                HStack {
-                    HStack(spacing: 10) {
-                        Image("avatar")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50)
-                            .padding(10)
-                        VStack(alignment: .leading, spacing: 7) {
-                            Text("your balance".uppercased())
-                                .font(.system(size: 12, weight: .light, design: .rounded))
-                                .foregroundColor(bgTitleCardColor)
-                            Text(balance)
-                                .font(.system(size: 18, weight: .bold, design: .rounded))
-                                .foregroundColor(.white)
-                        }
+            HStack {
+                HStack(spacing: 10) {
+                    Image("avatar")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50, height: 50)
+                        .padding(10)
+                    VStack(alignment: .leading, spacing: 7) {
+                        Text("your balance".uppercased())
+                            .font(.system(size: 12, weight: .light, design: .rounded))
+                            .foregroundColor(bgTitleCardColor)
+                        Text(balance)
+                            .font(.system(size: 18, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
                     }
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(.white)
                 }
-                .padding(10)
-                .frame(minWidth: 350, alignment: .leading)
-                .background(bgCardColor)
-                .cornerRadius(15)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.white)
+            }
+            .padding(10)
+            .frame(minWidth: 350, alignment: .leading)
+            .background(bgCardColor)
+            .cornerRadius(15)
             //}
         }
         .padding()
@@ -96,24 +96,24 @@ extension HomeView {
                 .foregroundColor(.white)
             VStack {
                 HStack {
-                    //NavigationLink(destination: MealDiaryFeatureView().toolbarRole(.editor)) {
-                        FeatureCardView(title: "Diario cibo", count: "frying.pan", description: "", color: bgCardColor)
+                    NavigationLink(destination: MealDiaryView().toolbarRole(.editor)) {
+                        DiaryCardView(title: "Diario cibo", count: "frying.pan", description: "", color: bgCardColor)
                             .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 8))
-                    //}
-                       
+                    }
+                    
                     //NavigationLink(destination: MealDiaryFeatureView().toolbarRole(.editor)) {
-                        FeatureCardView(title: "Diario bici", count: "figure.outdoor.cycle", description: "", color: bgCardColor)
-                            .padding(EdgeInsets(top: 0, leading: 8, bottom: 5, trailing: 0))
+                    DiaryCardView(title: "Diario bici", count: "figure.outdoor.cycle", description: "", color: bgCardColor)
+                        .padding(EdgeInsets(top: 0, leading: 8, bottom: 5, trailing: 0))
                     //}
                 }
                 HStack {
                     //NavigationLink(destination: MealDiaryFeatureView().toolbarRole(.editor)) {
-                        FeatureCardView(title: "Diario gioco", count: "playstation.logo", description: "", color: bgCardColor)
-                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 8))
+                    DiaryCardView(title: "Diario gioco", count: "playstation.logo", description: "", color: bgCardColor)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 8))
                     //}
                     //NavigationLink(destination: MealDiaryFeatureView().toolbarRole(.editor)) {
-                        FeatureCardView(title: "Diario salute", count: "cross.case", description: "", color: bgCardColor)
-                            .padding(EdgeInsets(top: 0, leading: 8, bottom: 5, trailing: 0))
+                    DiaryCardView(title: "Diario salute", count: "cross.case", description: "", color: bgCardColor)
+                        .padding(EdgeInsets(top: 0, leading: 8, bottom: 5, trailing: 0))
                     //}
                 }
             }

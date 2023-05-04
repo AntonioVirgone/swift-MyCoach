@@ -44,7 +44,7 @@ extension TrainingRowView {
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(bgAppColor, lineWidth: 0.2)
+                        .stroke(bgAppColorDark, lineWidth: 0.2)
                 )
          }
         .listRowSeparator(.hidden)
@@ -60,7 +60,7 @@ extension TrainingRowView {
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(bgAppColor, lineWidth: 0.2)
+                    .stroke(bgAppColorDark, lineWidth: 0.2)
             )
             .listRowSeparator(.hidden)
             .listRowBackground(color)

@@ -19,7 +19,7 @@ struct RepetitionView: View {
     
     var body: some View {
         ZStack {
-            bgAppColor.edgesIgnoringSafeArea(.all)
+            bgAppColorDark.edgesIgnoringSafeArea(.all)
             VStack {
                 Rectangle()
                     .frame(height: 0)
@@ -35,6 +35,9 @@ struct RepetitionView: View {
                     .frame(height: 40)
                 repetitionList
             }
+        }
+        .onAppear {
+            repetitions = RepetitionDataController.find()
         }
     }
     

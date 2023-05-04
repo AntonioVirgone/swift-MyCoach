@@ -7,7 +7,6 @@
 
 import Foundation
 import CoreData
-import NetworkPackage
 
 class TrainingDataController: ObservableObject {
     static var context: NSManagedObjectContext {

@@ -26,7 +26,7 @@
 		F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */; };
 		F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B27FF29FED4F200CFBA0A /* TrainingView.swift */; };
 		F91B280229FED58400CFBA0A /* TrainingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280129FED58400CFBA0A /* TrainingRowView.swift */; };
-		F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280329FED87100CFBA0A /* FeatureCardView.swift */; };
+		F91B280429FED87100CFBA0A /* DiaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280329FED87100CFBA0A /* DiaryCardView.swift */; };
 		F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */; };
 		F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280829FEDA7600CFBA0A /* RepetitionView.swift */; };
 		F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */; };
@@ -34,6 +34,10 @@
 		F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B280F29FEDC7800CFBA0A /* CounterView.swift */; };
 		F91B281229FFD25F00CFBA0A /* EditRepetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */; };
 		F91B28142A002C2800CFBA0A /* RepetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */; };
+		F91B28172A0304DD00CFBA0A /* MealDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */; };
+		F91B28192A03050800CFBA0A /* FoodDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28182A03050800CFBA0A /* FoodDataController.swift */; };
+		F91B281B2A03063A00CFBA0A /* MealSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */; };
+		F91B281D2A030A0500CFBA0A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281C2A030A0500CFBA0A /* AddFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +61,7 @@
 		F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardView.swift; sourceTree = "<group>"; };
 		F91B27FF29FED4F200CFBA0A /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
 		F91B280129FED58400CFBA0A /* TrainingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRowView.swift; sourceTree = "<group>"; };
-		F91B280329FED87100CFBA0A /* FeatureCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCardView.swift; sourceTree = "<group>"; };
+		F91B280329FED87100CFBA0A /* DiaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCardView.swift; sourceTree = "<group>"; };
 		F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionDataController.swift; sourceTree = "<group>"; };
 		F91B280829FEDA7600CFBA0A /* RepetitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionView.swift; sourceTree = "<group>"; };
 		F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,10 @@
 		F91B280F29FEDC7800CFBA0A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepetitionCardView.swift; sourceTree = "<group>"; };
 		F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionCardView.swift; sourceTree = "<group>"; };
+		F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDiaryView.swift; sourceTree = "<group>"; };
+		F91B28182A03050800CFBA0A /* FoodDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataController.swift; sourceTree = "<group>"; };
+		F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSelectorView.swift; sourceTree = "<group>"; };
+		F91B281C2A030A0500CFBA0A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 				F91B27E129FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld */,
 				F91B27E729FEB30400CFBA0A /* TrainingDataController.swift */,
 				F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */,
+				F91B28182A03050800CFBA0A /* FoodDataController.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 				F91B27CB29FE8DF900CFBA0A /* UploadDataView.swift */,
 				F91B27FC29FED46800CFBA0A /* Home */,
 				F91B27FB29FED45400CFBA0A /* Training */,
+				F91B28152A0303E100CFBA0A /* Diary */,
 				F91B280529FED99400CFBA0A /* Repetition */,
 			);
 			path = View;
@@ -174,7 +184,7 @@
 			children = (
 				F91B27F929FED3A300CFBA0A /* HomeView.swift */,
 				F91B27FD29FED47D00CFBA0A /* TrainingCardView.swift */,
-				F91B280329FED87100CFBA0A /* FeatureCardView.swift */,
+				F91B280329FED87100CFBA0A /* DiaryCardView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,8 +195,8 @@
 				F91B280C29FEDC5000CFBA0A /* Timer */,
 				F91B280829FEDA7600CFBA0A /* RepetitionView.swift */,
 				F91B280A29FEDBA400CFBA0A /* ReportCardView.swift */,
-				F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */,
 				F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */,
+				F91B281129FFD25F00CFBA0A /* EditRepetitionCardView.swift */,
 			);
 			path = Repetition;
 			sourceTree = "<group>";
@@ -198,6 +208,16 @@
 				F91B280F29FEDC7800CFBA0A /* CounterView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		F91B28152A0303E100CFBA0A /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */,
+				F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */,
+				F91B281C2A030A0500CFBA0A /* AddFoodView.swift */,
+			);
+			path = Diary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91B281229FFD25F00CFBA0A /* EditRepetitionCardView.swift in Sources */,
+				F91B28192A03050800CFBA0A /* FoodDataController.swift in Sources */,
+				F91B281D2A030A0500CFBA0A /* AddFoodView.swift in Sources */,
 				F91B27CC29FE8DF900CFBA0A /* UploadDataView.swift in Sources */,
 				F91B27F629FECAC000CFBA0A /* NetworkPackage.swift in Sources */,
 				F91B27E829FEB30400CFBA0A /* TrainingDataController.swift in Sources */,
@@ -291,13 +313,15 @@
 				F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */,
 				F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */,
 				F91B27DF29FEB04500CFBA0A /* FoodModel.swift in Sources */,
+				F91B28172A0304DD00CFBA0A /* MealDiaryView.swift in Sources */,
 				F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */,
 				F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */,
-				F91B280429FED87100CFBA0A /* FeatureCardView.swift in Sources */,
+				F91B280429FED87100CFBA0A /* DiaryCardView.swift in Sources */,
 				F91B28142A002C2800CFBA0A /* RepetitionCardView.swift in Sources */,
 				F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */,
 				F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */,
 				F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */,
+				F91B281B2A03063A00CFBA0A /* MealSelectorView.swift in Sources */,
 				F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

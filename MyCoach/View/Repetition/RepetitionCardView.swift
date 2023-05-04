@@ -41,8 +41,19 @@ struct RepetitionCardView: View {
 
 struct RepetitionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        RepetitionCardView(repetition: RepetitionModel(id: UUID(), date: Date(), number: 0, weigth: 0, trainingCode: "code"),
-                           training: TrainingModel(id: UUID(), code: "code", value: "value", series: 1, repetition: 1, relax: 10, addRepetition: true, addWeigth: true),
+        RepetitionCardView(repetition: RepetitionModel(id: UUID(),
+                                                       date: Date(),
+                                                       number: 0,
+                                                       weigth: 0,
+                                                       trainingCode: "code"),
+                           training: TrainingModel(id: UUID(),
+                                                   code: "code",
+                                                   value: "value",
+                                                   series: 1,
+                                                   repetition: 1,
+                                                   relax: 10,
+                                                   addRepetition: true,
+                                                   addWeigth: true),
                            color: .orange)
     }
 }

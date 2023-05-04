@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeatureCardView: View {
+struct DiaryCardView: View {
     let title: String
     let count: String
     let description: String
@@ -38,8 +38,8 @@ struct FeatureCardView: View {
     }
 }
 
-struct FeatureCardView_Previews: PreviewProvider {
+struct DiaryCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureCardView(title: "Bananas", count: "gamecontroller", description: "$10.230 (54.4 %)", color: Color(#colorLiteral(red: 0.1607843137, green: 0.1607843137, blue: 0.1843137255, alpha: 1)))
+        DiaryCardView(title: "Bananas", count: "gamecontroller", description: "$10.230 (54.4 %)", color: Color(#colorLiteral(red: 0.1607843137, green: 0.1607843137, blue: 0.1843137255, alpha: 1)))
     }
 }

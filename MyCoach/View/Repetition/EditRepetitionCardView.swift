@@ -20,7 +20,7 @@ struct EditRepetitionCardView: View {
     
     var body: some View {
         ZStack {
-            bgAppColor.edgesIgnoringSafeArea(.all)
+            bgAppColorDark.edgesIgnoringSafeArea(.all)
             VStack {
                 Rectangle()
                     .frame(height: 0)
@@ -79,7 +79,7 @@ struct EditRepetitionCardView: View {
                 .font(.title2)
                 .foregroundColor(.white)
                 .padding()
-                .background(bgAppColor)
+                .background(bgAppColorDark)
                 Spacer()
             }
         }
