@@ -23,12 +23,14 @@ class FoodDataController: ObservableObject {
         return container
     }()
     
-    static func saveFood(name: String, weigth: String) {
+    static func saveFood(name: String, weigth: Double, quanity: String, type: String) {
         print("save food")
         let food = FoodEntity(context: context)
         food.id = UUID()
         food.name = name
-        food.quantity = weigth
+        food.quantity = quanity
+        food.weigth = weigth
+        food.type = type
         food.date = Date()
         
         save()
@@ -64,13 +66,21 @@ class FoodDataController: ObservableObject {
         let fetchRequest = FoodEntity.fetchRequest()
         do {
             var array = [FoodModel]()
-            let schede = try context.fetch(fetchRequest)
+            let foodList = try context.fetch(fetchRequest)
             
-            for scheda in schede {
-                array.append(FoodModel(id: scheda.id ?? UUID(), name: scheda.name ?? "", weight: scheda.quantity ?? ""))
+            for food in foodList {
+                array.append(FoodModel(id: food.id ?? UUID(),
+                                       name: food.name ?? "",
+                                       type: food.type ?? "",
+                                       weight: food.weigth,
+                                       quantity: food.quantity ?? "",
+                                       date: food.date ?? Date()))
             }
             
-            return array
+            var sortedArray: [FoodModel] {
+                return array.sorted { $0.date > $1.date }
+            }
+            return sortedArray
         } catch {
             print(error)
             return []

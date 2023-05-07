@@ -12,7 +12,7 @@ struct UploadDataView: View {
 
     var body: some View {
         ZStack {
-            bgAppColor.edgesIgnoringSafeArea(.all)
+            bgAppColorDark.edgesIgnoringSafeArea(.all)
             
             VStack {
                 VStack(spacing: 25) {

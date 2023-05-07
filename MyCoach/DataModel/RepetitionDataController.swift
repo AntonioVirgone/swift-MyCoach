@@ -45,7 +45,11 @@ class RepetitionDataController: ObservableObject {
                 print("\(repetition)")
                 array.append(RepetitionModel(id: repetition.id ?? UUID(), date: repetition.date ?? Date(), number: repetition.number, weigth: repetition.weigth, trainingCode: repetition.trainingCode ?? ""))
             }
-            return array
+            
+            var sortedArray: [RepetitionModel] {
+                return array.sorted { $0.date > $1.date }
+            }
+            return sortedArray
         } catch {
             return []
         }

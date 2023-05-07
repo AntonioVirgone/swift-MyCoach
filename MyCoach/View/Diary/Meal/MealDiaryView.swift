@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct MealDiaryView: View {
-    @State private var foods = FoodDataController.find()
-    @State private var showingAddBreackfast = false
+    @StateObject private var foodViewModel = FoodViewModel()
 
     var body: some View {
         ZStack {
@@ -20,55 +19,46 @@ struct MealDiaryView: View {
                     .background(Color.orange.opacity(0.4))
                 Spacer()
                 VStack(spacing: 15) {
-                    Button {
-                        showingAddBreackfast.toggle()
-                    } label: {
+                    NavigationLink(destination: MealSaveView()) {
                         Text("Aggiungi pasto")
                             .font(.system(size: 26, weight: .bold, design: .rounded))
-                            .foregroundColor(.white.opacity(0.4))
+                            .foregroundColor(.black.opacity(0.4))
                             .frame(width: 300, height: 50)
                             .background(color2.opacity(0.6))
                             .cornerRadius(10)
                             .padding(EdgeInsets(top: 30, leading: 2, bottom: 0, trailing: 2))
                     }
-                    .sheet(isPresented: $showingAddBreackfast) {
-                        MealSelectorView()
-                    }
                 }
                 Spacer()
-                if (foods.count > 0) {
+                if (foodViewModel.foods.count > 0) {
                     List {
-                        ForEach(foods, id: \.self) { element in
-                            VStack(alignment: .leading) {
-                                Text("title \(element.name)")
-                                Text("description \(element.weight)")
-                            }
-                            .foregroundColor(.white.opacity(0.8))
-                            .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
-                            .listRowSeparatorTint(.white)
-                            .listRowBackground(color5)
+                        ForEach(foodViewModel.foods, id: \.self) { element in
+                            MealDiaryRowView(title: element.name,
+                                             type: element.type,
+                                             description: "\(element.weight) \(element.quantity)",
+                                             date: element.date)
                         }
                         .onDelete(perform: deleteRepetition)
                     }
                     .scrollContentBackground(.hidden) // HERE
                     .background(bgAppColorDark)
                 } else {
-                    Spacer()
+                    EmptyView()
                 }
             }
             .navigationTitle("Diario cibo")
             .font(.title2)
         }
         .onAppear {
-            foods = FoodDataController.find()
+            print("appear")
+            foodViewModel.load()
         }
     }
     
     private func deleteRepetition(offsets: IndexSet) {
         _ = withAnimation {
             offsets.map {
-                FoodDataController.deleteRepetition(repetitionId: foods[$0].id)
-                foods = FoodDataController.find()
+                foodViewModel.delete(id: foodViewModel.foods[$0].id)
             }
         }
     }

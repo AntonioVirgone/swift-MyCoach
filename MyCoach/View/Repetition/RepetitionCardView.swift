@@ -24,15 +24,15 @@ struct RepetitionCardView: View {
                             .font(.system(size: 10, weight: .bold, design: .rounded))
                             .foregroundColor(.gray)
                     }
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
                     Text("\(Int(repetition.weigth)) kg")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                         .foregroundColor(.white)
-                        .padding(EdgeInsets(top: 5, leading: 0, bottom: 10, trailing: 0))
+                        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                 }
-                .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
                 Spacer()
             }
+            .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 0))
             .background(bgCardColor)
             .cornerRadius(15)
         }
@@ -48,6 +48,7 @@ struct RepetitionCardView_Previews: PreviewProvider {
                                                        trainingCode: "code"),
                            training: TrainingModel(id: UUID(),
                                                    code: "code",
+                                                   orderNumber: 1,
                                                    value: "value",
                                                    series: 1,
                                                    repetition: 1,

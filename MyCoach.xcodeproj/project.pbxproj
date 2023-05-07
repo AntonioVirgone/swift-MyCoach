@@ -36,8 +36,16 @@
 		F91B28142A002C2800CFBA0A /* RepetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */; };
 		F91B28172A0304DD00CFBA0A /* MealDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */; };
 		F91B28192A03050800CFBA0A /* FoodDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28182A03050800CFBA0A /* FoodDataController.swift */; };
-		F91B281B2A03063A00CFBA0A /* MealSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */; };
-		F91B281D2A030A0500CFBA0A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B281C2A030A0500CFBA0A /* AddFoodView.swift */; };
+		F91B28392A0419A300CFBA0A /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B28382A0419A300CFBA0A /* EmptyView.swift */; };
+		F91B283C2A0642A400CFBA0A /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B283B2A0642A400CFBA0A /* FoodViewModel.swift */; };
+		F91B283E2A065ACF00CFBA0A /* MealDiaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B283D2A065ACF00CFBA0A /* MealDiaryRowView.swift */; };
+		F9E3EF272A06B7DA00B62D03 /* MealSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF262A06B7DA00B62D03 /* MealSaveView.swift */; };
+		F9E3EF2B2A06BF4900B62D03 /* HealthDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF2A2A06BF4900B62D03 /* HealthDiaryView.swift */; };
+		F9E3EF2D2A06BF9C00B62D03 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF2C2A06BF9C00B62D03 /* HealthViewModel.swift */; };
+		F9E3EF2F2A06C0D900B62D03 /* HealthSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF2E2A06C0D900B62D03 /* HealthSaveView.swift */; };
+		F9E3EF312A06C28300B62D03 /* HealthDiaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF302A06C28300B62D03 /* HealthDiaryRowView.swift */; };
+		F9E3EF332A06C38700B62D03 /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF322A06C38700B62D03 /* HealthModel.swift */; };
+		F9E3EF352A06C3BC00B62D03 /* HealthDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3EF342A06C3BC00B62D03 /* HealthDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +79,16 @@
 		F91B28132A002C2800CFBA0A /* RepetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetitionCardView.swift; sourceTree = "<group>"; };
 		F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDiaryView.swift; sourceTree = "<group>"; };
 		F91B28182A03050800CFBA0A /* FoodDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataController.swift; sourceTree = "<group>"; };
-		F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSelectorView.swift; sourceTree = "<group>"; };
-		F91B281C2A030A0500CFBA0A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		F91B28382A0419A300CFBA0A /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		F91B283B2A0642A400CFBA0A /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		F91B283D2A065ACF00CFBA0A /* MealDiaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDiaryRowView.swift; sourceTree = "<group>"; };
+		F9E3EF262A06B7DA00B62D03 /* MealSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSaveView.swift; sourceTree = "<group>"; };
+		F9E3EF2A2A06BF4900B62D03 /* HealthDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDiaryView.swift; sourceTree = "<group>"; };
+		F9E3EF2C2A06BF9C00B62D03 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		F9E3EF2E2A06C0D900B62D03 /* HealthSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSaveView.swift; sourceTree = "<group>"; };
+		F9E3EF302A06C28300B62D03 /* HealthDiaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDiaryRowView.swift; sourceTree = "<group>"; };
+		F9E3EF322A06C38700B62D03 /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
+		F9E3EF342A06C3BC00B62D03 /* HealthDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +125,7 @@
 				F91B27E929FEC5F100CFBA0A /* Resources */,
 				F91B27E029FEB0C000CFBA0A /* DataModel */,
 				F91B27D729FE8E1B00CFBA0A /* Model */,
+				F91B283A2A06428A00CFBA0A /* ViewModel */,
 				F91B27F829FECF2A00CFBA0A /* View */,
 				F91B27CD29FE8DFB00CFBA0A /* Assets.xcassets */,
 				F91B27CF29FE8DFB00CFBA0A /* Preview Content */,
@@ -131,6 +148,7 @@
 				F91B27DA29FEAFE800CFBA0A /* TrainingCardModel.swift */,
 				F91B27DC29FEB02E00CFBA0A /* RepetitionModel.swift */,
 				F91B27DE29FEB04500CFBA0A /* FoodModel.swift */,
+				F9E3EF322A06C38700B62D03 /* HealthModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +160,7 @@
 				F91B27E729FEB30400CFBA0A /* TrainingDataController.swift */,
 				F91B280629FED9D400CFBA0A /* RepetitionDataController.swift */,
 				F91B28182A03050800CFBA0A /* FoodDataController.swift */,
+				F9E3EF342A06C3BC00B62D03 /* HealthDataController.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -213,11 +232,40 @@
 		F91B28152A0303E100CFBA0A /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */,
-				F91B281A2A03063A00CFBA0A /* MealSelectorView.swift */,
-				F91B281C2A030A0500CFBA0A /* AddFoodView.swift */,
+				F9E3EF282A06BF2E00B62D03 /* Meal */,
+				F9E3EF292A06BF3C00B62D03 /* Health */,
+				F91B28382A0419A300CFBA0A /* EmptyView.swift */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		F91B283A2A06428A00CFBA0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F91B283B2A0642A400CFBA0A /* FoodViewModel.swift */,
+				F9E3EF2C2A06BF9C00B62D03 /* HealthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9E3EF282A06BF2E00B62D03 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				F91B28162A0304DD00CFBA0A /* MealDiaryView.swift */,
+				F91B283D2A065ACF00CFBA0A /* MealDiaryRowView.swift */,
+				F9E3EF262A06B7DA00B62D03 /* MealSaveView.swift */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		F9E3EF292A06BF3C00B62D03 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3EF2A2A06BF4900B62D03 /* HealthDiaryView.swift */,
+				F9E3EF302A06C28300B62D03 /* HealthDiaryRowView.swift */,
+				F9E3EF2E2A06C0D900B62D03 /* HealthSaveView.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,20 +347,27 @@
 			files = (
 				F91B281229FFD25F00CFBA0A /* EditRepetitionCardView.swift in Sources */,
 				F91B28192A03050800CFBA0A /* FoodDataController.swift in Sources */,
-				F91B281D2A030A0500CFBA0A /* AddFoodView.swift in Sources */,
+				F91B283E2A065ACF00CFBA0A /* MealDiaryRowView.swift in Sources */,
 				F91B27CC29FE8DF900CFBA0A /* UploadDataView.swift in Sources */,
 				F91B27F629FECAC000CFBA0A /* NetworkPackage.swift in Sources */,
 				F91B27E829FEB30400CFBA0A /* TrainingDataController.swift in Sources */,
+				F9E3EF2F2A06C0D900B62D03 /* HealthSaveView.swift in Sources */,
+				F91B283C2A0642A400CFBA0A /* FoodViewModel.swift in Sources */,
+				F9E3EF272A06B7DA00B62D03 /* MealSaveView.swift in Sources */,
 				F91B280229FED58400CFBA0A /* TrainingRowView.swift in Sources */,
 				F91B27DD29FEB02E00CFBA0A /* RepetitionModel.swift in Sources */,
 				F91B27E329FEB0E600CFBA0A /* MyCoachDataModel.xcdatamodeld in Sources */,
 				F91B27FA29FED3A300CFBA0A /* HomeView.swift in Sources */,
+				F91B28392A0419A300CFBA0A /* EmptyView.swift in Sources */,
 				F91B27F429FECAA000CFBA0A /* JsonDecode.swift in Sources */,
 				F91B280E29FEDC6300CFBA0A /* RelaxButtonView.swift in Sources */,
+				F9E3EF332A06C38700B62D03 /* HealthModel.swift in Sources */,
+				F9E3EF2B2A06BF4900B62D03 /* HealthDiaryView.swift in Sources */,
 				F91B27DB29FEAFE800CFBA0A /* TrainingCardModel.swift in Sources */,
 				F91B280029FED4F200CFBA0A /* TrainingView.swift in Sources */,
 				F91B280729FED9D400CFBA0A /* RepetitionDataController.swift in Sources */,
 				F91B27DF29FEB04500CFBA0A /* FoodModel.swift in Sources */,
+				F9E3EF312A06C28300B62D03 /* HealthDiaryRowView.swift in Sources */,
 				F91B28172A0304DD00CFBA0A /* MealDiaryView.swift in Sources */,
 				F91B280B29FEDBA400CFBA0A /* ReportCardView.swift in Sources */,
 				F91B27D929FE8E4E00CFBA0A /* TrainingModel.swift in Sources */,
@@ -321,8 +376,9 @@
 				F91B27FE29FED47D00CFBA0A /* TrainingCardView.swift in Sources */,
 				F91B280929FEDA7600CFBA0A /* RepetitionView.swift in Sources */,
 				F91B27CA29FE8DF900CFBA0A /* MyCoachApp.swift in Sources */,
-				F91B281B2A03063A00CFBA0A /* MealSelectorView.swift in Sources */,
+				F9E3EF2D2A06BF9C00B62D03 /* HealthViewModel.swift in Sources */,
 				F91B281029FEDC7800CFBA0A /* CounterView.swift in Sources */,
+				F9E3EF352A06C3BC00B62D03 /* HealthDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

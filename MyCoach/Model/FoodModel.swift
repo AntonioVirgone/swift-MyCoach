@@ -10,5 +10,8 @@ import Foundation
 struct FoodModel: Hashable {
     let id: UUID
     let name: String
-    let weight: String
+    let type: String
+    let weight: Double
+    let quantity: String
+    let date: Date
 }

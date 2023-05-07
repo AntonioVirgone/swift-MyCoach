@@ -5,12 +5,14 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Air Bike 10 minuti (1’ 150 watt 30’’ 250 watt)",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "value00010",
+                "orderNumber": 2,
                 "value": "Leg Press 45° ",
                 "series":4,
                 "repetition": 15,
@@ -20,6 +22,7 @@
             },
             {
                 "code": "value00011",
+                "orderNumber": 3,
                 "value": "Squat + Overhead Press ",
                 "series":4,
                 "repetition": 15,
@@ -29,6 +32,7 @@
             },
             {
                 "code": "value00012",
+                "orderNumber": 4,
                 "value": "Chest Incline + Alzate laterali ",
                 "series":3,
                 "repetition": 10,
@@ -38,6 +42,7 @@
             },
             {
                 "code": "value00013",
+                "orderNumber": 5,
                 "value": "High pull + high pull inverso ",
                 "series":3,
                 "repetition": 12,
@@ -47,6 +52,7 @@
             },
             {
                 "code": "value00014",
+                "orderNumber": 6,
                 "value": "Curl Manubri + Tricipiti sopra la testa ",
                 "series":3,
                 "repetition": 12,
@@ -62,6 +68,7 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)",
                 "addRepetition": false,
                 "addWeigth": false
@@ -74,24 +81,28 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Bike 3 minuti",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 2,
                 "value": "Rope 40",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 3,
                 "value": "Side Plank 25+25",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 4,
                 "value": "Crunch gambe alzate 25",
                 "addRepetition": false,
                 "addWeigth": false

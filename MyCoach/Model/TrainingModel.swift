@@ -10,6 +10,7 @@ import Foundation
 struct TrainingModel: Hashable, Codable {
     let id: UUID?
     let code: String?
+    let orderNumber: Double
     let value: String
     let series: Double?
     let repetition: Double?

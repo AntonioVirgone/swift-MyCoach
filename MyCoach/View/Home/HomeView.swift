@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var balance = "10h"
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -50,17 +48,16 @@ extension HomeView {
                         .frame(width: 50, height: 50)
                         .padding(10)
                     VStack(alignment: .leading, spacing: 7) {
-                        Text("your balance".uppercased())
+                        Text("la data di oggi".uppercased())
                             .font(.system(size: 12, weight: .light, design: .rounded))
                             .foregroundColor(bgTitleCardColor)
-                        Text(balance)
+                        Text("\(Date().formatted())")
                             .font(.system(size: 18, weight: .bold, design: .rounded))
                             .foregroundColor(.white)
                     }
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
-                    .foregroundColor(.white)
+                //Image(systemName: "chevron.right").foregroundColor(.white)
             }
             .padding(10)
             .frame(minWidth: 350, alignment: .leading)
@@ -73,7 +70,7 @@ extension HomeView {
     
     private var trainingCards: some View {
         VStack(alignment: .leading) {
-            Text("Achievements")
+            Text("Allenamenti")
                 .font(.title2)
                 .fontWeight(.medium)
                 .foregroundColor(.white)
@@ -90,7 +87,7 @@ extension HomeView {
     
     private var featureCards: some View {
         VStack(alignment: .leading) {
-            Text("Advanced features")
+            Text("Altro")
                 .font(.title2)
                 .fontWeight(.medium)
                 .foregroundColor(.white)
@@ -111,10 +108,10 @@ extension HomeView {
                     DiaryCardView(title: "Diario gioco", count: "playstation.logo", description: "", color: bgCardColor)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 8))
                     //}
-                    //NavigationLink(destination: MealDiaryFeatureView().toolbarRole(.editor)) {
+                    NavigationLink(destination: HealthDiaryView().toolbarRole(.editor)) {
                     DiaryCardView(title: "Diario salute", count: "cross.case", description: "", color: bgCardColor)
                         .padding(EdgeInsets(top: 0, leading: 8, bottom: 5, trailing: 0))
-                    //}
+                    }
                 }
             }
         }

@@ -37,6 +37,7 @@ class TrainingDataController: ObservableObject {
         for training in trainingCardModel.trainings {
             let trainingEnity = TrainingEnity(context: context)
             trainingEnity.code = training.code
+            trainingEnity.orderNumber = training.orderNumber
             trainingEnity.repetition = training.repetition ?? 0
             trainingEnity.relax = training.relax ?? 0
             trainingEnity.series = training.series ?? 0
@@ -87,20 +88,26 @@ class TrainingDataController: ObservableObject {
             
             for trainingCardEntity in trainingCardEntityList {
                 var trainingModelList = [TrainingModel]()
-                for trainingModel in trainingCardEntity.relationship?.allObjects as! [TrainingEnity] {
-                    trainingModelList.append(TrainingModel(id: trainingModel.id ?? UUID(),
-                                                           code: trainingModel.code ?? "",
-                                                           value: trainingModel.value ?? "",
-                                                           series: trainingModel.series,
-                                                           repetition: trainingModel.repetition,
-                                                           relax: trainingModel.relax,
-                                                           addRepetition: trainingModel.addRepetition,
-                                                           addWeigth: trainingModel.addWeigth))
+                for trainingEntity in trainingCardEntity.relationship?.allObjects as! [TrainingEnity] {
+                    trainingModelList.append(TrainingModel(id: trainingEntity.id ?? UUID(),
+                                                           code: trainingEntity.code ?? "",
+                                                           orderNumber: trainingEntity.orderNumber,
+                                                           value: trainingEntity.value ?? "",
+                                                           series: trainingEntity.series,
+                                                           repetition: trainingEntity.repetition,
+                                                           relax: trainingEntity.relax,
+                                                           addRepetition: trainingEntity.addRepetition,
+                                                           addWeigth: trainingEntity.addWeigth))
                 }
+                
+                var sortedArray: [TrainingModel] {
+                    return trainingModelList.sorted { $0.orderNumber < $1.orderNumber }
+                }
+                
                 trainingCardModelList.append(TrainingCardModel(id: trainingCardEntity.id ?? UUID(),
                                                                title: trainingCardEntity.title ?? "",
                                                                type: trainingCardEntity.type ?? "",
-                                                               trainings: trainingModelList))
+                                                               trainings: sortedArray))
             }
             return trainingCardModelList
         } catch {

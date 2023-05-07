@@ -5,12 +5,14 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Cardio tapy 5’ cammino + 10’ (alterno 1’ corsa e 1’ cammino)",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "value00001",
+                "orderNumber": 2,
                 "value": "Leg Press ",
                 "series":4,
                 "repetition": 15,
@@ -20,6 +22,7 @@
             },
             {
                 "code": "value00002",
+                "orderNumber": 3,
                 "value": "Leg Extension ",
                 "series":3,
                 "repetition": 15,
@@ -35,24 +38,28 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Squat con kettleball 20",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 2,
                 "value": "Skeep alto 30 secondi",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 3,
                 "value": "Step up continuo 60 secondi a gamba",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 4,
                 "value": "Plank max",
                 "addRepetition": false,
                 "addWeigth": false
@@ -65,12 +72,14 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Climbe 10 minuti",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "value00003",
+                "orderNumber": 2,
                 "value": "Crunch ",
                 "series":3,
                 "repetition": 20,
@@ -80,6 +89,7 @@
             },
             {
                 "code": "value00004",
+                "orderNumber": 3,
                 "value": "Crunch obliqui ",
                 "series":3,
                 "repetition": 50,

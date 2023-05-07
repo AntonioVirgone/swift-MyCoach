@@ -24,6 +24,7 @@ struct TrainingRowView_Previews: PreviewProvider {
     static var previews: some View {
         TrainingRowView(color: .orange, training: TrainingModel(id: UUID(),
                                                                 code: "",
+                                                                orderNumber: 1,
                                                                 value: "",
                                                                 series: 10,
                                                                 repetition: 10,

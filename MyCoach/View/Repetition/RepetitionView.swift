@@ -32,7 +32,7 @@ struct RepetitionView: View {
                     .frame(height: 40)
                 reportList
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 0)
                 repetitionList
             }
         }
@@ -101,6 +101,7 @@ struct RepetitionView_Previews: PreviewProvider {
     static var previews: some View {
         RepetitionView(color: .orange, training: TrainingModel(id: UUID(),
                                                                code: "",
+                                                               orderNumber: 1,
                                                                value: "",
                                                                series: 10,
                                                                repetition: 10,
@@ -133,23 +134,23 @@ extension RepetitionView {
     private var repetitionList: some View {
         VStack(alignment: .leading) {
             if (countRepetition() > 0) {
-                Text("Posts \(countRepetition())")
-                    .font(.system(size: 18, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                 List {
                     ForEach(repetitions, id: \.self) { repetition in
                         if training.code == repetition.trainingCode {
                             RepetitionCardView(repetition: repetition, training: training, color: color)
+                                 .listRowInsets(.init(top: 0,
+                                                     leading: 0,
+                                                     bottom: 0,
+                                                     trailing: -20))
                                 .listRowSeparator(.hidden)
-                                .listRowBackground(bgAppColor)
+                                .listRowBackground(bgAppColorDark)
+                            
                         }
                     }
                     .onDelete(perform: deleteRepetition)
                 }
-                .ignoresSafeArea()
                 .scrollContentBackground(.hidden)
-                .background(bgAppColor)
+                .background(bgAppColorDark)
             }
             else {
                 Spacer()
@@ -206,6 +207,6 @@ extension RepetitionView {
         .font(.title2)
         .foregroundColor(.white)
         .padding()
-        .background(bgAppColor)
+        .background(bgAppColorDark)
     }
 }

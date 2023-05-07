@@ -5,12 +5,14 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Vogatore 10 minuti (<2.5)",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "value00005",
+                "orderNumber": 2,
                 "value": "Piegamenti sulle braccia ",
                 "series":3,
                 "repetition": 15,
@@ -20,6 +22,7 @@
             },
             {
                 "code": "value00006",
+                "orderNumber": 3,
                 "value": "Chest Press ",
                 "series":3,
                 "repetition": 12,
@@ -29,6 +32,7 @@
             },
             {
                 "code": "value00007",
+                "orderNumber": 4,
                 "value": "Pulley ",
                 "series":3,
                 "repetition": 12,
@@ -38,6 +42,7 @@
             },
             {
                 "code": "value00008",
+                "orderNumber": 5,
                 "value": "Lat Machine ",
                 "series":3,
                 "repetition": 12,
@@ -47,6 +52,7 @@
             },
             {
                 "code": "value00009",
+                "orderNumber": 6,
                 "value": "Shoulder Press ",
                 "series":3,
                 "repetition": 12,
@@ -62,6 +68,7 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)",
                 "addRepetition": false,
                 "addWeigth": false
@@ -74,30 +81,35 @@
         "trainings": [
             {
                 "code": "valuexxxxx",
+                "orderNumber": 1,
                 "value": "Affondi in cammino 8",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 2,
                 "value": "Balzi su cubo 8",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 3,
                 "value": "Jumping jack 40",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 4,
                 "value": "Torsioni del busto 50",
                 "addRepetition": false,
                 "addWeigth": false
             },
             {
                 "code": "valuexxxxx",
+                "orderNumber": 5,
                 "value": "Crunch gambe alzate 25",
                 "addRepetition": false,
                 "addWeigth": false
@@ -105,4 +117,4 @@
         ]
     }
 ]
-
+ 
